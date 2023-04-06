@@ -1,0 +1,99 @@
+﻿빌드 시작: 2013-09-03 오전 10:40:32
+     1>2 노드의 "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\cximagemfcdll.vcxproj" 프로젝트(build 대상)입니다.
+     1>PrepareForBuild:
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\bin\" 디렉터리를 만들고 있습니다.
+       InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\cximagemfcdll.unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../zlib /I../../jasper/include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D JAS_WIN_MSVC_BUILD /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0600 /D _WINDLL /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\cximagemfcdll.pch" /Fo"Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\\" /Fd"Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../../zlib /I../../jasper/include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D JAS_WIN_MSVC_BUILD /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0600 /D _WINDLL /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\\" /Fd"Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt cximagemfcdll.cpp ..\tif_xfile.cpp ..\ximabmp.cpp ..\ximadsp.cpp ..\ximaenc.cpp ..\ximaexif.cpp ..\ximage.cpp ..\ximagif.cpp ..\ximahist.cpp ..\ximaico.cpp ..\ximainfo.cpp ..\ximaint.cpp ..\ximajas.cpp ..\ximajbg.cpp ..\ximajpg.cpp ..\ximalpha.cpp ..\ximalyr.cpp ..\ximamng.cpp ..\ximapal.cpp ..\ximapcx.cpp ..\ximapng.cpp ..\ximaraw.cpp ..\ximasel.cpp ..\ximaska.cpp ..\ximatga.cpp ..\ximath.cpp ..\ximatif.cpp ..\ximatran.cpp ..\ximawbmp.cpp ..\ximawmf.cpp ..\ximawnd.cpp ..\xmemfile.cpp
+         xmemfile.cpp
+         ximawnd.cpp
+     1>z:\ftp서버\수업ftp\영상처리2012\영상처리 실습#1\template\cximage\cximage\ximawnd.cpp : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+         ximawmf.cpp
+         ximawbmp.cpp
+         ximatran.cpp
+         ximatif.cpp
+         ximath.cpp
+         ximatga.cpp
+         ximaska.cpp
+         ximasel.cpp
+         ximaraw.cpp
+         ximapng.cpp
+         ximapcx.cpp
+         ximapal.cpp
+         ximamng.cpp
+         ximalyr.cpp
+         ximalpha.cpp
+         ximajpg.cpp
+         ximajbg.cpp
+         ximajas.cpp
+         코드를 생성하고 있습니다...
+         컴파일하고 있습니다...
+         ximaint.cpp
+     1>z:\ftp서버\수업ftp\영상처리2012\영상처리 실습#1\template\cximage\cximage\ximaint.cpp(659): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+         ximainfo.cpp
+     1>z:\ftp서버\수업ftp\영상처리2012\영상처리 실습#1\template\cximage\cximage\ximainfo.cpp : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+         ximaico.cpp
+         ximahist.cpp
+         ximagif.cpp
+         ximage.cpp
+         ximaexif.cpp
+         ximaenc.cpp
+         ximadsp.cpp
+     1>z:\ftp서버\수업ftp\영상처리2012\영상처리 실습#1\template\cximage\cximage\ximadsp.cpp(2976): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+         ximabmp.cpp
+         tif_xfile.cpp
+         cximagemfcdll.cpp
+         코드를 생성하고 있습니다...
+       ResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _VC80_UPGRADE=0x0600 /D _AFXDLL /l"0x0809" /nologo /fo"Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\cximagemfcdll.res" cximagemfcdll.rc 
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\cximagemfcdll.dll.embed.manifest.res" "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\cximagemfcdll_manifest.rc" 
+       MakeDirsForLink:
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\lib\" 디렉터리를 만들고 있습니다.
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\bin\cximagemfcdll.dll)이(가) Linker의 OutputFile 속성 값(Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\bin\cximagemfcdll_ad.dll)과 일치하지 않습니다. 이로 인해 프로젝트가 잘못 빌드될 수 있습니다. 이를 수정하려면 $(OutDir), $(TargetName) 및 $(TargetExt) 속성 값이 %(Link.OutputFile)에 지정된 값과 일치해야 합니다.
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(cximagemfcdll)이(가) Linker의 OutputFile 속성 값(cximagemfcdll_ad)과 일치하지 않습니다. 이로 인해 프로젝트가 잘못 빌드될 수 있습니다. 이를 수정하려면 $(OutDir), $(TargetName) 및 $(TargetExt) 속성 값이 %(Link.OutputFile)에 지정된 값과 일치해야 합니다.
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\bin\cximagemfcdll_ad.dll" /INCREMENTAL /NOLOGO /LIBPATH:"Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\lib\\" png_ad.lib jpeg_ad.lib zlib_ad.lib tiff_ad.lib jbig_ad.lib jasper_ad.lib mng_ad.lib libdcr_ad.lib cximage_ad.lib /MANIFEST /ManifestFile:"Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\cximagemfcdll.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\bin\cximagemfcdll.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\lib\cximagemfcdll.lib" /MACHINE:X86 /DLL "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\cximagemfcdll.res"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\cximagemfcdll.dll.embed.manifest.res"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\cximagemfcdll.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\StdAfx.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\tif_xfile.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximabmp.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximadsp.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximaenc.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximaexif.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximage.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximagif.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximahist.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximaico.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximainfo.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximaint.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximajas.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximajbg.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximajpg.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximalpha.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximalyr.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximamng.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximapal.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximapcx.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximapng.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximaraw.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximasel.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximaska.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximatga.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximath.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximatif.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximatran.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximawbmp.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximawmf.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\ximawnd.obj"
+         "Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\x86\xbuild\Debug\cximagemfcdll\xmemfile.obj"
+     1>LINK : fatal error LNK1104: 'png_ad.lib' 파일을 열 수 없습니다.
+     1>"Z:\FTP서버\수업FTP\영상처리2012\영상처리 실습#1\Template\cximage\CxImage\CxImageDLL\cximagemfcdll.vcxproj" 프로젝트를 빌드했습니다(build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:01:36.33

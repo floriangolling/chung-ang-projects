@@ -1,0 +1,24 @@
+﻿cl : ligne de commande warning D9035: l'option 'Gm' est déconseillée et sera supprimée dans une version ultérieure
+  libmng_zlib.c
+  libmng_write.c
+  libmng_trace.c
+  libmng_read.c
+  libmng_prop_xs.c
+  libmng_pixels.c
+  libmng_object_prc.c
+  libmng_jpeg.c
+  libmng_hlapi.c
+  libmng_filter.c
+  libmng_error.c
+  libmng_dither.c
+  libmng_display.c
+  libmng_cms.c
+  libmng_chunk_xs.c
+  libmng_chunk_prc.c
+  libmng_chunk_io.c
+  libmng_chunk_descr.c
+  libmng_callback_xs.c
+  Génération de code en cours...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1545,5): warning MSB8012: TargetPath(C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\x86\lib\mng.lib) ne correspond pas à la valeur de la propriété OutputFile (C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\x86\lib\mng_wd.lib) de Library. Cela peut entraîner une génération incorrecte de votre projet. Pour corriger ce problème, vérifiez que les valeurs des propriétés $(OutDir), $(TargetName) et $(TargetExt) correspondent à la valeur spécifiée dans %(Lib.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1547,5): warning MSB8012: TargetName(mng) ne correspond pas à la valeur de la propriété OutputFile (mng_wd) de Library. Cela peut entraîner une génération incorrecte de votre projet. Pour corriger ce problème, vérifiez que les valeurs des propriétés $(OutDir), $(TargetName) et $(TargetExt) correspondent à la valeur spécifiée dans %(Lib.OutputFile).
+  mng.vcxproj -> C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\x86\lib\mng.lib

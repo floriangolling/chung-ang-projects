@@ -1,0 +1,40 @@
+﻿cl : ligne de commande warning D9035: l'option 'Gm' est déconseillée et sera supprimée dans une version ultérieure
+  tif_zip.c
+  tif_write.c
+  tif_warning.c
+  tif_version.c
+  tif_tile.c
+  tif_thunder.c
+  tif_swab.c
+  tif_strip.c
+  tif_read.c
+  tif_print.c
+  tif_predict.c
+  tif_pixarlog.c
+  tif_packbits.c
+  tif_open.c
+  tif_ojpeg.c
+  tif_next.c
+  tif_lzw.c
+  tif_luv.c
+  tif_jpeg.c
+  tif_getimage.c
+  Génération de code en cours...
+  Compilation en cours...
+  tif_flush.c
+  tif_fax3.c
+  tif_error.c
+  tif_dumpmode.c
+  tif_dirwrite.c
+  tif_dirread.c
+  tif_dirinfo.c
+  tif_dir.c
+  tif_compress.c
+  tif_codec.c
+  tif_close.c
+  tif_aux.c
+  fax3sm_winnt.c
+  Génération de code en cours...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1545,5): warning MSB8012: TargetPath(C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\x86\lib\Tiff.lib) ne correspond pas à la valeur de la propriété OutputFile (C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\x86\lib\Tiff_wd.lib) de Library. Cela peut entraîner une génération incorrecte de votre projet. Pour corriger ce problème, vérifiez que les valeurs des propriétés $(OutDir), $(TargetName) et $(TargetExt) correspondent à la valeur spécifiée dans %(Lib.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1547,5): warning MSB8012: TargetName(Tiff) ne correspond pas à la valeur de la propriété OutputFile (Tiff_wd) de Library. Cela peut entraîner une génération incorrecte de votre projet. Pour corriger ce problème, vérifiez que les valeurs des propriétés $(OutDir), $(TargetName) et $(TargetExt) correspondent à la valeur spécifiée dans %(Lib.OutputFile).
+  Tiff.vcxproj -> C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\x86\lib\Tiff.lib

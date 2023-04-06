@@ -1,0 +1,51 @@
+﻿cl : ligne de commande warning D9035: l'option 'Gm' est déconseillée et sera supprimée dans une version ultérieure
+  StdAfx.cpp
+cl : ligne de commande warning D9035: l'option 'Gm' est déconseillée et sera supprimée dans une version ultérieure
+  xTargetButton.cpp
+  TwainCpp.cpp
+  Quantize.cpp
+  MainFrm.cpp
+  logomdi.cpp
+  DlgURL.cpp
+  DlgThreshold.cpp
+  DlgText.cpp
+  DlgSkew.cpp
+  DlgShadow.cpp
+  DlgRotate.cpp
+  DlgResample.cpp
+  DlgRepair.cpp
+  DlgPalette.cpp
+  DlgOptions.cpp
+  DlgOpacity.cpp
+  DlgMix.cpp
+  DlgJpeg.cpp
+  DlgIncBpp.cpp
+  DlgHisto.cpp
+  Génération de code en cours...
+  Compilation en cours...
+  DlgGamma.cpp
+  DlgFloodFill.cpp
+  DlgFFT.cpp
+  DlgExpand.cpp
+  DlgDither.cpp
+  DlgDecBpp.cpp
+  DlgDataExt.cpp
+  DlgCustomFilter.cpp
+  DlgCombine.cpp
+  DlgColorize.cpp
+  DlgCapture.cpp
+  demoView.cpp
+  demoDoc.cpp
+  demo.cpp
+  ChildFrm.cpp
+  BCMenu.cpp
+C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\demo\BCMenu.cpp(83,9): warning C4996: 'GetVersion': a été déclaré déconseillé
+C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\demo\BCMenu.cpp(90,4): warning C4996: 'GetVersionExW': a été déclaré déconseillé
+C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\demo\BCMenu.cpp(105,4): warning C4996: 'GetVersionExW': a été déclaré déconseillé
+C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\demo\BCMenu.cpp(1972,11): warning C4018: '<' : incompatibilité signed/unsigned
+  Génération de code en cours...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetPath(C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\x86\bin\demo.exe) ne correspond pas à la valeur de la propriété OutputFile (C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\x86\bin\demo_wd.exe) de Linker. Cela peut entraîner une génération incorrecte de votre projet. Pour corriger ce problème, vérifiez que les valeurs des propriétés $(OutDir), $(TargetName) et $(TargetExt) correspondent à la valeur spécifiée dans %(Link.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1365,5): warning MSB8012: TargetName(demo) ne correspond pas à la valeur de la propriété OutputFile (demo_wd) de Linker. Cela peut entraîner une génération incorrecte de votre projet. Pour corriger ce problème, vérifiez que les valeurs des propriétés $(OutDir), $(TargetName) et $(TargetExt) correspondent à la valeur spécifiée dans %(Link.OutputFile).
+BCMenu.obj : warning LNK4075: ' /EDITANDCONTINUE' ignoré à cause de la spécification '/SAFESEH'
+     Création de la bibliothèque C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\x86\bin\demo.lib et de l'objet C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\x86\bin\demo.exp
+  demo.vcxproj -> C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\x86\bin\demo.exe

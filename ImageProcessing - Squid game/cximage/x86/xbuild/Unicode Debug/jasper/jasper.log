@@ -1,0 +1,59 @@
+﻿cl : ligne de commande warning D9035: l'option 'Gm' est déconseillée et sera supprimée dans une version ultérieure
+  ras_enc.c
+  ras_dec.c
+  ras_cod.c
+  pnm_enc.c
+  pnm_dec.c
+  pnm_cod.c
+  pgx_enc.c
+  pgx_dec.c
+  pgx_cod.c
+  mif_cod.c
+  jpg_val.c
+  jpg_dummy.c
+  jpc_util.c
+  jpc_tsfb.c
+  jpc_tagtree.c
+  jpc_t2enc.c
+  jpc_t2dec.c
+  jpc_t2cod.c
+  jpc_t1enc.c
+  jpc_t1dec.c
+  Génération de code en cours...
+  Compilation en cours...
+  jpc_t1cod.c
+  jpc_qmfb.c
+  jpc_mqenc.c
+  jpc_mqdec.c
+  jpc_mqcod.c
+  jpc_mct.c
+  jpc_math.c
+  jpc_enc.c
+  jpc_dec.c
+  jpc_cs.c
+  jpc_bs.c
+  jp2_enc.c
+  jp2_dec.c
+  jp2_cod.c
+  jas_version.c
+  jas_tvp.c
+  jas_string.c
+  jas_stream.c
+  jas_seq.c
+  jas_malloc.c
+  Génération de code en cours...
+  Compilation en cours...
+  jas_init.c
+  jas_image.c
+  jas_iccdata.c
+  jas_icc.c
+  jas_getopt.c
+  jas_debug.c
+  jas_cm.c
+  bmp_enc.c
+  bmp_dec.c
+  bmp_cod.c
+  Génération de code en cours...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1545,5): warning MSB8012: TargetPath(C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\x86\lib\jasper.lib) ne correspond pas à la valeur de la propriété OutputFile (C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\x86\lib\jasper_wd.lib) de Library. Cela peut entraîner une génération incorrecte de votre projet. Pour corriger ce problème, vérifiez que les valeurs des propriétés $(OutDir), $(TargetName) et $(TargetExt) correspondent à la valeur spécifiée dans %(Lib.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1547,5): warning MSB8012: TargetName(jasper) ne correspond pas à la valeur de la propriété OutputFile (jasper_wd) de Library. Cela peut entraîner une génération incorrecte de votre projet. Pour corriger ce problème, vérifiez que les valeurs des propriétés $(OutDir), $(TargetName) et $(TargetExt) correspondent à la valeur spécifiée dans %(Lib.OutputFile).
+  jasper.vcxproj -> C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\x86\lib\jasper.lib

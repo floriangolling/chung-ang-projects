@@ -1,0 +1,45 @@
+﻿cl : ligne de commande warning D9035: l'option 'Gm' est déconseillée et sera supprimée dans une version ultérieure
+  StdAfx.cpp
+cl : ligne de commande warning D9035: l'option 'Gm' est déconseillée et sera supprimée dans une version ultérieure
+  xmemfile.cpp
+  ximawnd.cpp
+  ximawmf.cpp
+  ximawbmp.cpp
+  ximatran.cpp
+  ximatif.cpp
+  ximath.cpp
+  ximatga.cpp
+  ximaska.cpp
+  ximasel.cpp
+  ximaraw.cpp
+  ximapng.cpp
+  ximapcx.cpp
+  ximapal.cpp
+  ximamng.cpp
+  ximalyr.cpp
+  ximalpha.cpp
+  ximajpg.cpp
+  ximajbg.cpp
+  ximajas.cpp
+  Génération de code en cours...
+  Compilation en cours...
+  ximaint.cpp
+  ximainfo.cpp
+  ximaico.cpp
+C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\CxImage\ximaico.cpp(327,30): warning C4838: la conversion de 'int' en 'WORD' requiert une conversion restrictive
+C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\CxImage\ximaico.cpp(350,6): warning C4838: la conversion de 'int' en 'DWORD' requiert une conversion restrictive
+  ximahist.cpp
+  ximagif.cpp
+  ximage.cpp
+  ximaexif.cpp
+  ximaenc.cpp
+  ximadsp.cpp
+  ximabmp.cpp
+  tif_xfile.cpp
+  cximagemfcdll.cpp
+  Génération de code en cours...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetPath(C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\x86\bin\cximagemfcdll.dll) ne correspond pas à la valeur de la propriété OutputFile (C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\x86\bin\cximagemfcdll_wd.dll) de Linker. Cela peut entraîner une génération incorrecte de votre projet. Pour corriger ce problème, vérifiez que les valeurs des propriétés $(OutDir), $(TargetName) et $(TargetExt) correspondent à la valeur spécifiée dans %(Link.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1365,5): warning MSB8012: TargetName(cximagemfcdll) ne correspond pas à la valeur de la propriété OutputFile (cximagemfcdll_wd) de Linker. Cela peut entraîner une génération incorrecte de votre projet. Pour corriger ce problème, vérifiez que les valeurs des propriétés $(OutDir), $(TargetName) et $(TargetExt) correspondent à la valeur spécifiée dans %(Link.OutputFile).
+cximagemfcdll.obj : warning LNK4075: ' /EDITANDCONTINUE' ignoré à cause de la spécification '/SAFESEH'
+     Création de la bibliothèque C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\x86\lib\cximagemfcdll.lib et de l'objet C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\x86\lib\cximagemfcdll.exp
+  cximagemfcdll.vcxproj -> C:\Users\flori\Desktop\Corée\S1\Image processing\Template\cximage\x86\bin\cximagemfcdll.dll
