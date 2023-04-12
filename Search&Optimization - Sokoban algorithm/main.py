@@ -1,8 +1,9 @@
+import math
 from pathlib import Path
 
 from search.load import get_student_assignments
 from problem import SokobanProblem
-from time import process_time, time
+from time import process_time, time, sleep
 from collections import defaultdict
 from traceback import format_exc
 from importlib import import_module
@@ -29,6 +30,7 @@ def evaluate_algorithm(alg_spec, problem_spec, result_queue: Queue):
     # Begin to measure time
     time_start = process_time()
     algorithm = alg_cls()
+    print(f'Initialize complete: {alg_cls.STUDENT_ID}.')
 
     # Do search
     solution = None
@@ -42,6 +44,7 @@ def evaluate_algorithm(alg_spec, problem_spec, result_queue: Queue):
 
     # Get the end time
     time_end = process_time()
+    print(f'Searching complete: {alg_cls.STUDENT_ID}.')
 
     # Execute the solution
     if solution is not None:
@@ -53,6 +56,7 @@ def evaluate_algorithm(alg_spec, problem_spec, result_queue: Queue):
         except:
             failure = format_exc()
 
+    print(f'Result of {alg_cls.STUDENT_ID}: Failure {not not failure}, {score}, {time_end - time_start}, {steps}')
     result_queue.put((algorithm.STUDENT_ID, failure, score, time_end - time_start, steps))
 
 
@@ -66,6 +70,34 @@ if __name__ == '__main__':
     score_measures = defaultdict(list)
     step_measures = defaultdict(list)
     failures = defaultdict(list)
+    def _print(trial):
+        measure_aggregated = [(key, (-len(failures[key]),
+                                     float(np.mean(score_measures[key]) if len(score_measures[key]) else float('-inf')),
+                                     -float(np.mean(time_measures[key]) if len(time_measures[key]) else float('inf')),
+                                     -float(np.mean(step_measures[key]) if len(step_measures[key]) else float('inf'))),
+                               failures[key])
+                              for key in set().union(time_measures.keys(), failures.keys())]
+        measure_aggregated = sorted(measure_aggregated, key=lambda x: x[1], reverse=True)
+
+        print(f'Current trial: {trial}/100')
+        print('\n Rank  Student ID   Score   Time(s)   Steps   Failures | Percentile')
+        print('=' * 55 + '|' + '=' * 11)
+        previous_item = None
+        rank = 0
+        percentile = 0
+        for i, (key, (f, s, t, st), failure_list) in enumerate(measure_aggregated):
+            if previous_item != (f, s, t, st):
+                previous_item = (f, s, t, st)
+                rank = i + 1  # Set the current index as rank
+                percentile = int(rank / len(measure_aggregated) * 100)
+                if rank % 5 == 0:
+                    print('-' * 55 + '|' + '-' * 11)
+
+            print(f'#{rank:2d}    {key:10s}  {s:7.2f}  {-t:7.2f}  {-st:7.2f}  {-f:8d} |  {percentile:3d}th/100')
+
+            # Write-down the failures
+            with Path(f'./failure_{key}.txt').open('w+t') as fp:
+                fp.write('\n\n'.join(failure_list))
 
     # Start evaluation process (using multi-processing)
     process_results = Queue()
@@ -76,7 +108,7 @@ if __name__ == '__main__':
         proc.alg_id = alg if alg is not None else '__BFS__'
         return proc
 
-    for trial in range(10):
+    for trial in range(25):
         prob_spec = prob_generator.reset_for_eval()
         print(f'Trial {trial} begins...')
 
@@ -86,68 +118,55 @@ if __name__ == '__main__':
         bfs_p.join()
         bfs_end = time()
 
-        time_limit = (bfs_end - bfs_start) * 100
+        time_limit = math.ceil((bfs_end - bfs_start) * 100)
         print(f'Time limit for the trial {trial}: {time_limit} sec')
 
         # Execute other algorithms
-        for chunk in range(0, len(search_algorithms), process_count):
-            processes = [_execute(prob_spec, alg)
-                         for alg in search_algorithms[chunk:chunk + process_count]]
+        processes = []
+        algorithms_to_run = search_algorithms.copy()
+        timeouts = set()  # Timeout by default
+        while algorithms_to_run or processes:
+            if algorithms_to_run and len(processes) < process_count:
+                alg = algorithms_to_run.pop()
+                processes.append((_execute(prob_spec, alg), time()))
 
-            chunk_time_end = time() + time_limit
-            timeouts = set()
-            for p in processes:
-                time_remaining = chunk_time_end - time()
-                if time_remaining > 0:
-                    try:
-                        p.join(timeout=time_remaining)
-                    except TimeoutError:
-                        # Terminate the process and set it as failure.
-                        p.terminate()
-                        timeouts.add(p.alg_id)
-                elif p.is_alive():
-                    # The time is already over!
-                    # Terminate the process and set it as failure.
+            new_proc_list = []
+            for p, begin in processes:
+                if not p.is_alive():
+                    continue
+                if begin + time_limit < time():
                     p.terminate()
                     timeouts.add(p.alg_id)
-
-            # Read results
-            while not process_results.empty():
-                alg_id, f, s, t, st = process_results.get()
-                if alg_id not in timeouts:
-                    if f is None:
-                        time_measures[alg_id].append(t)
-                        score_measures[alg_id].append(s)
-                        step_measures[alg_id].append(st)
-                    else:
-                        failures[alg_id].append(f'Trial #{trial}: ' + f)
+                    print(f'[TIMEOUT] {p.alg_id} / '
+                          f'Process is running more than {time_limit} sec, from ts={begin}; now={time()}')
                 else:
-                    failures[alg_id].append(f'Trial #{trial}: Time out!')
-                    print(f'[NOTICE] Time out: {alg_id}!')
+                    new_proc_list.append((p, begin))
+            processes = new_proc_list
 
-    measure_aggregated = [(key, (-len(failures[key]),
-                                 float(np.mean(score_measures[key]) if len(score_measures[key]) else float('-inf')),
-                                 -float(np.mean(time_measures[key]) if len(time_measures[key]) else float('inf')),
-                                 -float(np.mean(step_measures[key]) if len(step_measures[key]) else float('inf'))),
-                           failures[key])
-                          for key in set().union(time_measures.keys(), failures.keys())]
-    measure_aggregated = sorted(measure_aggregated, key=lambda x: x[1], reverse=True)
+            if len(processes) >= process_count:
+                # Wait for one seconds
+                sleep(1)
 
-    print('\n Rank  Student ID   Score   Time(s)   Steps   Failures | Percentile')
-    print('=' * 55 + '|' + '=' * 11)
-    previous_item = None
-    rank = 0
-    percentile = 0
-    for i, (key, (f, s, t, st), failure_list) in enumerate(measure_aggregated):
-        if previous_item != (f, s, t, st):
-            previous_item = (f, s, t, st)
-            rank = i + 1  # Set the current index as rank
-            percentile = int(rank / len(measure_aggregated) * 100)
-            if rank % 5 == 0:
-                print('-' * 55 + '|' + '-' * 11)
+        # Read results
+        result_not_logged = set(search_algorithms)
+        while not process_results.empty():
+            alg_id, f, s, t, st = process_results.get()
+            if alg_id not in timeouts:
+                if alg_id in result_not_logged:
+                    result_not_logged.remove(alg_id)
+                if f is None:
+                    time_measures[alg_id].append(t)
+                    score_measures[alg_id].append(s)
+                    step_measures[alg_id].append(st)
+                else:
+                    failures[alg_id].append(f'Trial #{trial}: ' + f)
 
-        print(f'#{rank:2d}    {key:10s}  {s:7.2f}  {-t:7.2f}  {-st:7.2f}  {-f:8d} |  {percentile:3d}th/100')
+        # Add timeouts
+        for alg_id in timeouts:
+            failures[alg_id].append(f'Trial #{trial}: Time out!')
+            result_not_logged.remove(alg_id)
 
-        # Write-down the failures
-        with Path(f'./failure_{key}.txt').open('w+t') as fp:
-            fp.write('\n\n'.join(failure_list))
+        for alg_id in result_not_logged:
+            failures[alg_id].append(f'Trial #{trial}: Process terminated by unexpected way!')
+
+        _print(trial)
