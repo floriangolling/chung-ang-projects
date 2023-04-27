@@ -1,0 +1,4 @@
+networkx
+scipy
+numpy
+psutil===5.9.0

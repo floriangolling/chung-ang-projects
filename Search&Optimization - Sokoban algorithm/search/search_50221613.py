@@ -8,18 +8,18 @@ from queue import PriorityQueue
 # So this class increment its counter each addition itself in order not to 
 # do it in the actual program
 
-class indexPriorityQueue(PriorityQueue):
-    def __init__(self):
-        PriorityQueue.__init__(self)
-        self.counter = 0
+    class indexPriorityQueue(PriorityQueue):
+        def __init__(self):
+            PriorityQueue.__init__(self)
+            self.counter = 0
 
-    def put(self, item, priority):
-        PriorityQueue.put(self, (priority, self.counter, item))
-        self.counter += 1
+        def put(self, item, priority):
+            PriorityQueue.put(self, (priority, self.counter, item))
+            self.counter += 1
 
-    def get(self, *args, **kwargs):
-        _, _, item = PriorityQueue.get(self, *args, **kwargs)
-        return item
+        def get(self, *args, **kwargs):
+            _, _, item = PriorityQueue.get(self, *args, **kwargs)
+            return item
 
 # This algorithm is a common Uniform Cost algorithm.
 
@@ -35,7 +35,7 @@ class Assignment1:  # Do not change the name of this class!
         # Put the initial state in the queue to be checked.
         # We put 0 as priority but it does not matter it will get removed anyway
         uncheckedNodes.put(problem.initial_state, 0)
-
+    
         # Loop over all node in the queue until we find a solution
         while not uncheckedNodes.empty():
             # Get the best reward so far node
